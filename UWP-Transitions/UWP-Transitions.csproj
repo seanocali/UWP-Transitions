@@ -130,12 +130,26 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\beach-birds-calm-clouds-219998.jpg" />
     <Content Include="Assets\Images\beautiful-bloom-blooming-blossom-414083.jpg" />
+    <Content Include="Assets\Images\CarbonFiber.jpg" />
     <Content Include="Assets\Images\nature-red-forest-leaves-33109.jpg" />
+    <Content Include="Assets\Images\photography-of-trees-covered-with-snow-773594.jpg" />
+    <Content Include="Assets\Shaders\Dual-Input\WipeLeft.hlsl" />
+    <Content Include="Assets\Shaders\Dual-Input\WipeRight.hlsl" />
+    <Content Include="Assets\Shaders\Dual-Input\WipeUp.hlsl" />
+    <Content Include="Assets\Shaders\Single-Input\WindowSlice.hlsl" />
+    <Content Include="Assets\Shaders\Dual-Input\WindowSlice.hlsl" />
+    <Content Include="Assets\Shaders\Single-Input\WipeDown.hlsl" />
+    <Content Include="Assets\Shaders\Single-Input\WipeLeft.hlsl" />
+    <Content Include="Assets\Shaders\Single-Input\WipeRight.hlsl" />
+    <Content Include="Assets\Shaders\Dual-Input\WipeDown.hlsl" />
     <Content Include="Assets\Shaders\Dissolve.hlsl" />
     <Content Include="Assets\Shaders\Mandelbrot.hlsl" />
     <Content Include="Assets\Shaders\Ripples.hlsl" />
+    <Content Include="Assets\Shaders\Single-Input\WipeUp.hlsl" />
     <Content Include="Assets\Shaders\Sketch.hlsl" />
+    <Content Include="Assets\Shaders\WipeUp.hlsl" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -163,7 +177,31 @@
       <Version>1.24.0</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Assets\Shaders\CompileShaders.cmd" />
+    <Content Include="Assets\Shaders\Single-Input\WindowSlice.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Shaders\Dual-Input\WipeRight.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Shaders\Dual-Input\WindowSlice.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Shaders\Single-Input\WipeRight.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Shaders\Single-Input\WipeLeft.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Shaders\Dual-Input\WipeLeft.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Shaders\Dual-Input\WipeDown.bin" />
+    <Content Include="Assets\Shaders\Single-Input\WipeDown.bin" />
+    <Content Include="Assets\Shaders\Single-Input\WipeUp.bin" />
+    <Content Include="Assets\Shaders\Dual-Input\WipeUp.bin" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Shaders\Dissolve.bin" />
     <Content Include="Assets\Shaders\Mandelbrot.bin" />
@@ -171,6 +209,7 @@
     <Content Include="Assets\Shaders\Sketch.bin" />
     <Content Include="Assets\Shaders\SwirlTransitionEffect.bin" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

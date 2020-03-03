@@ -11,14 +11,16 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400"/>
-            <ColumnDefinition Width="1400"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="14*"/>
         </Grid.ColumnDefinitions>
         <StackPanel VerticalAlignment="Center" Margin="50">
-            <Slider/>
+            <Slider x:Name="ProgressSlider" Header="Progress" Value="0" ValueChanged="ProgressSlider_ValueChanged" Minimum="0.0" Maximum="1.0" StepFrequency="0.01"/>
+            <Slider x:Name="FeatherSlider" Header="Feather" Value="0" ValueChanged="FeatherSlider_ValueChanged"  Minimum="0.0" Maximum="1.0" StepFrequency="0.01"/>
         </StackPanel>
         <Grid Background="Black" Grid.Column="1">
-            <canvas:CanvasControl x:Name="canvas" Width="1280" Height="853" CreateResources="canvas_CreateResources" Draw="canvas_Draw"/>
+            <Image Source="Assets/Images/CarbonFiber.jpg" Stretch="Fill" />
+            <canvas:CanvasAnimatedControl x:Name="canvas" Draw="canvas_Draw" CreateResources="canvas_CreateResources" Width="640" Height="369"/>
         </Grid>
     </Grid>
 </Page>
